@@ -1,0 +1,49 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 7 7
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L LoaDy:STM32G474VxT U?
+U 1 1 5F5465C4
+P 2175 1600
+F 0 "U?" H 2175 2315 50  0000 C CNN
+F 1 "STM32G474VxT" H 2175 2224 50  0000 C CNN
+F 2 "Package_QFP:LQFP-100_14x14mm_P0.5mm" H 2175 2300 50  0001 C CNN
+F 3 "" H 2125 1650 50  0001 C CNN
+	1    2175 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L LoaDy:STM32G474VxT U?
+U 2 1 5F547F4E
+P 4300 3500
+F 0 "U?" H 4300 4215 50  0000 C CNN
+F 1 "STM32G474VxT" H 4300 4124 50  0000 C CNN
+F 2 "Package_QFP:LQFP-100_14x14mm_P0.5mm" H 4300 4200 50  0001 C CNN
+F 3 "" H 4250 3550 50  0001 C CNN
+	2    4300 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L LoaDy:STM32G474VxT U?
+U 3 1 5F54AE3E
+P 8000 2500
+F 0 "U?" H 8000 3215 50  0000 C CNN
+F 1 "STM32G474VxT" H 8000 3124 50  0000 C CNN
+F 2 "Package_QFP:LQFP-100_14x14mm_P0.5mm" H 8000 3200 50  0001 C CNN
+F 3 "" H 7950 2550 50  0001 C CNN
+	3    8000 2500
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

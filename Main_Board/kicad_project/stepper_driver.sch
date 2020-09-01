@@ -1,10 +1,9 @@
 EESchema Schematic File Version 4
-LIBS:main_board-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 6
+Sheet 2 7
 Title ""
 Date ""
 Rev ""
@@ -84,30 +83,20 @@ Text HLabel 4100 2850 0    50   Input ~ 0
 AD0
 Text HLabel 4100 2950 0    50   Input ~ 0
 AD1
-Text HLabel 4100 3150 0    50   Input ~ 0
+Text HLabel 3425 3150 0    50   Input ~ 0
 UART
-Text HLabel 4100 2650 0    50   Input ~ 0
+Text HLabel 3450 2650 0    50   Input ~ 0
 INDEX
-Text HLabel 4100 2550 0    50   Input ~ 0
+Text HLabel 3450 2550 0    50   Input ~ 0
 DIAG
-Text HLabel 4100 2350 0    50   Input ~ 0
+Text HLabel 3450 2350 0    50   Input ~ 0
 DIR
-Text HLabel 4100 2250 0    50   Input ~ 0
+Text HLabel 3450 2250 0    50   Input ~ 0
 STEP
-Wire Wire Line
-	4350 2250 4100 2250
-Wire Wire Line
-	4100 2350 4350 2350
-Wire Wire Line
-	4350 2550 4100 2550
-Wire Wire Line
-	4100 2650 4350 2650
 Wire Wire Line
 	4350 2850 4100 2850
 Wire Wire Line
 	4100 2950 4350 2950
-Wire Wire Line
-	4350 3150 4100 3150
 Wire Wire Line
 	4350 3750 4100 3750
 $Comp
@@ -122,7 +111,7 @@ AR Path="/5F4A9E34/5F47FEA7" Ref="J?"  Part="1"
 AR Path="/5F4AD05F/5F47FEA7" Ref="J?"  Part="1" 
 F 0 "J?" H 6405 2342 50  0000 L CNN
 F 1 "MOTOR" H 6405 2251 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 6325 2350 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Horizontal" H 6325 2350 50  0001 C CNN
 F 3 "~" H 6325 2350 50  0001 C CNN
 	1    6325 2350
 	1    0    0    -1  
@@ -460,4 +449,50 @@ Wire Wire Line
 Connection ~ 7550 3050
 Wire Wire Line
 	7550 3050 7600 3050
+$Comp
+L Connector_Generic:Conn_01x05 TP?
+U 1 1 5F51F4C4
+P 3725 1950
+F 0 "TP?" V 3775 1650 50  0000 R CNN
+F 1 "DRIVER_TP" V 3675 1650 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 3725 1950 50  0001 C CNN
+F 3 "~" H 3725 1950 50  0001 C CNN
+	1    3725 1950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3450 2350 3925 2350
+Wire Wire Line
+	3450 2250 3825 2250
+Wire Wire Line
+	3450 2550 3525 2550
+Wire Wire Line
+	3450 2650 3625 2650
+Wire Wire Line
+	3425 3150 3725 3150
+Wire Wire Line
+	3525 2150 3525 2550
+Connection ~ 3525 2550
+Wire Wire Line
+	3525 2550 4350 2550
+Wire Wire Line
+	3625 2150 3625 2650
+Connection ~ 3625 2650
+Wire Wire Line
+	3625 2650 4350 2650
+Wire Wire Line
+	3725 2150 3725 3150
+Connection ~ 3725 3150
+Wire Wire Line
+	3725 3150 4350 3150
+Wire Wire Line
+	3825 2150 3825 2250
+Connection ~ 3825 2250
+Wire Wire Line
+	3825 2250 4350 2250
+Wire Wire Line
+	3925 2150 3925 2350
+Connection ~ 3925 2350
+Wire Wire Line
+	3925 2350 4350 2350
 $EndSCHEMATC
