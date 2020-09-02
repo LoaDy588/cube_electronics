@@ -3,12 +3,12 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 7
-Title ""
+Sheet 1 8
+Title "Cube Main Board - top level schematic"
 Date ""
 Rev ""
-Comp ""
-Comment1 ""
+Comp "Oldřich Pecák (LoaDy)"
+Comment1 "Preliminary license: CERN OHWL-P v2 ?"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -322,5 +322,11 @@ S 4550 2625 1475 2100
 U 5F5463C2
 F0 "MCU" 50
 F1 "MCU.sch" 50
+$EndSheet
+$Sheet
+S 1325 2775 1125 1025
+U 5F51A37F
+F0 "I/O" 50
+F1 "input_output.sch" 50
 $EndSheet
 $EndSCHEMATC

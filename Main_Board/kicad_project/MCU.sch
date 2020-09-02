@@ -3,12 +3,12 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 7
+Sheet 7 8
 Title ""
 Date ""
 Rev ""
-Comp ""
-Comment1 ""
+Comp "Oldřich Pecák (LoaDy)"
+Comment1 "Preliminary license: CERN OHWL-P v2 ?"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -16,34 +16,324 @@ $EndDescr
 $Comp
 L LoaDy:STM32G474VxT U?
 U 1 1 5F5465C4
-P 2175 1600
-F 0 "U?" H 2175 2315 50  0000 C CNN
-F 1 "STM32G474VxT" H 2175 2224 50  0000 C CNN
-F 2 "Package_QFP:LQFP-100_14x14mm_P0.5mm" H 2175 2300 50  0001 C CNN
-F 3 "" H 2125 1650 50  0001 C CNN
-	1    2175 1600
+P 5475 1250
+F 0 "U?" H 5475 1965 50  0000 C CNN
+F 1 "STM32G474VxT" H 5475 1874 50  0000 C CNN
+F 2 "Package_QFP:LQFP-100_14x14mm_P0.5mm" H 5475 1950 50  0001 C CNN
+F 3 "" H 5425 1300 50  0001 C CNN
+	1    5475 1250
 	1    0    0    -1  
 $EndComp
 $Comp
 L LoaDy:STM32G474VxT U?
 U 2 1 5F547F4E
-P 4300 3500
-F 0 "U?" H 4300 4215 50  0000 C CNN
-F 1 "STM32G474VxT" H 4300 4124 50  0000 C CNN
-F 2 "Package_QFP:LQFP-100_14x14mm_P0.5mm" H 4300 4200 50  0001 C CNN
-F 3 "" H 4250 3550 50  0001 C CNN
-	2    4300 3500
+P 3450 3400
+F 0 "U?" H 3450 4115 50  0000 C CNN
+F 1 "STM32G474VxT" H 3450 4024 50  0000 C CNN
+F 2 "Package_QFP:LQFP-100_14x14mm_P0.5mm" H 3450 4100 50  0001 C CNN
+F 3 "" H 3400 3450 50  0001 C CNN
+	2    3450 3400
 	1    0    0    -1  
 $EndComp
 $Comp
 L LoaDy:STM32G474VxT U?
 U 3 1 5F54AE3E
-P 8000 2500
-F 0 "U?" H 8000 3215 50  0000 C CNN
-F 1 "STM32G474VxT" H 8000 3124 50  0000 C CNN
-F 2 "Package_QFP:LQFP-100_14x14mm_P0.5mm" H 8000 3200 50  0001 C CNN
-F 3 "" H 7950 2550 50  0001 C CNN
-	3    8000 2500
+P 8650 3950
+F 0 "U?" H 8650 4665 50  0000 C CNN
+F 1 "STM32G474VxT" H 8650 4574 50  0000 C CNN
+F 2 "Package_QFP:LQFP-100_14x14mm_P0.5mm" H 8650 4650 50  0001 C CNN
+F 3 "" H 8600 4000 50  0001 C CNN
+	3    8650 3950
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5F50168E
+P 4575 1050
+F 0 "C?" H 4525 975 50  0000 R CNN
+F 1 "100n" H 4550 1125 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4575 1050 50  0001 C CNN
+F 3 "~" H 4575 1050 50  0001 C CNN
+	1    4575 1050
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5F503E90
+P 4325 1050
+F 0 "C?" H 4275 975 50  0000 R CNN
+F 1 "100n" H 4300 1125 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4325 1050 50  0001 C CNN
+F 3 "~" H 4325 1050 50  0001 C CNN
+	1    4325 1050
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5F504272
+P 4075 1050
+F 0 "C?" H 4025 975 50  0000 R CNN
+F 1 "100n" H 4050 1125 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4075 1050 50  0001 C CNN
+F 3 "~" H 4075 1050 50  0001 C CNN
+	1    4075 1050
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5F50454D
+P 3825 1050
+F 0 "C?" H 3775 975 50  0000 R CNN
+F 1 "100n" H 3800 1125 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3825 1050 50  0001 C CNN
+F 3 "~" H 3825 1050 50  0001 C CNN
+	1    3825 1050
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5F504BCE
+P 3575 1050
+F 0 "C?" H 3525 975 50  0000 R CNN
+F 1 "100n" H 3550 1125 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3575 1050 50  0001 C CNN
+F 3 "~" H 3575 1050 50  0001 C CNN
+	1    3575 1050
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5F505049
+P 3325 1050
+F 0 "C?" H 3275 975 50  0000 R CNN
+F 1 "10u" H 3300 1125 50  0000 R CNN
+F 2 "Capacitor_SMD:C_1210_3225Metri" H 3325 1050 50  0001 C CNN
+F 3 "~" H 3325 1050 50  0001 C CNN
+	1    3325 1050
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	5025 850  4925 850 
+Wire Wire Line
+	3325 950  3325 850 
+Connection ~ 3325 850 
+Wire Wire Line
+	3325 850  3100 850 
+Wire Wire Line
+	3575 950  3575 850 
+Connection ~ 3575 850 
+Wire Wire Line
+	3575 850  3325 850 
+Wire Wire Line
+	3825 950  3825 850 
+Connection ~ 3825 850 
+Wire Wire Line
+	3825 850  3575 850 
+Wire Wire Line
+	4075 950  4075 850 
+Connection ~ 4075 850 
+Wire Wire Line
+	4075 850  3825 850 
+Wire Wire Line
+	4325 950  4325 850 
+Connection ~ 4325 850 
+Wire Wire Line
+	4325 850  4075 850 
+Wire Wire Line
+	4575 950  4575 850 
+Connection ~ 4575 850 
+Wire Wire Line
+	4575 850  4325 850 
+Wire Wire Line
+	5025 1250 4925 1250
+Wire Wire Line
+	4925 1250 4925 1150
+Connection ~ 4925 850 
+Wire Wire Line
+	4925 850  4575 850 
+Wire Wire Line
+	5025 950  4925 950 
+Connection ~ 4925 950 
+Wire Wire Line
+	4925 950  4925 850 
+Wire Wire Line
+	5025 1050 4925 1050
+Connection ~ 4925 1050
+Wire Wire Line
+	4925 1050 4925 950 
+Wire Wire Line
+	5025 1150 4925 1150
+Connection ~ 4925 1150
+Wire Wire Line
+	4925 1150 4925 1050
+$Comp
+L power:GND #PWR?
+U 1 1 5F508D68
+P 4575 1150
+F 0 "#PWR?" H 4575 900 50  0001 C CNN
+F 1 "GND" H 4580 977 50  0000 C CNN
+F 2 "" H 4575 1150 50  0001 C CNN
+F 3 "" H 4575 1150 50  0001 C CNN
+	1    4575 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F5090A8
+P 4325 1150
+F 0 "#PWR?" H 4325 900 50  0001 C CNN
+F 1 "GND" H 4330 977 50  0000 C CNN
+F 2 "" H 4325 1150 50  0001 C CNN
+F 3 "" H 4325 1150 50  0001 C CNN
+	1    4325 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F5092B8
+P 4075 1150
+F 0 "#PWR?" H 4075 900 50  0001 C CNN
+F 1 "GND" H 4080 977 50  0000 C CNN
+F 2 "" H 4075 1150 50  0001 C CNN
+F 3 "" H 4075 1150 50  0001 C CNN
+	1    4075 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F509567
+P 3825 1150
+F 0 "#PWR?" H 3825 900 50  0001 C CNN
+F 1 "GND" H 3830 977 50  0000 C CNN
+F 2 "" H 3825 1150 50  0001 C CNN
+F 3 "" H 3825 1150 50  0001 C CNN
+	1    3825 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F5097C9
+P 3575 1150
+F 0 "#PWR?" H 3575 900 50  0001 C CNN
+F 1 "GND" H 3580 977 50  0000 C CNN
+F 2 "" H 3575 1150 50  0001 C CNN
+F 3 "" H 3575 1150 50  0001 C CNN
+	1    3575 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F50999B
+P 3325 1150
+F 0 "#PWR?" H 3325 900 50  0001 C CNN
+F 1 "GND" H 3330 977 50  0000 C CNN
+F 2 "" H 3325 1150 50  0001 C CNN
+F 3 "" H 3325 1150 50  0001 C CNN
+	1    3325 1150
+	1    0    0    -1  
+$EndComp
+Text HLabel 3100 850  0    50   Input ~ 0
+VDD
+$Comp
+L Device:C_Small C?
+U 1 1 5F509E58
+P 4800 1600
+F 0 "C?" H 4750 1525 50  0000 R CNN
+F 1 "100n" H 4775 1675 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4800 1600 50  0001 C CNN
+F 3 "~" H 4800 1600 50  0001 C CNN
+	1    4800 1600
+	1    0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F50A4F3
+P 4800 1700
+F 0 "#PWR?" H 4800 1450 50  0001 C CNN
+F 1 "GND" H 4805 1527 50  0000 C CNN
+F 2 "" H 4800 1700 50  0001 C CNN
+F 3 "" H 4800 1700 50  0001 C CNN
+	1    4800 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5025 1450 4800 1450
+Wire Wire Line
+	4800 1500 4800 1450
+Connection ~ 4800 1450
+Wire Wire Line
+	4800 1450 4625 1450
+Text HLabel 4625 1450 0    50   Input ~ 0
+VDDA
+$Comp
+L power:GND #PWR?
+U 1 1 5F513C8D
+P 6000 1725
+F 0 "#PWR?" H 6000 1475 50  0001 C CNN
+F 1 "GND" H 6005 1552 50  0000 C CNN
+F 2 "" H 6000 1725 50  0001 C CNN
+F 3 "" H 6000 1725 50  0001 C CNN
+	1    6000 1725
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 1725 6000 1450
+Wire Wire Line
+	6000 850  5925 850 
+Wire Wire Line
+	5925 950  6000 950 
+Connection ~ 6000 950 
+Wire Wire Line
+	6000 950  6000 850 
+Wire Wire Line
+	5925 1050 6000 1050
+Connection ~ 6000 1050
+Wire Wire Line
+	6000 1050 6000 950 
+Wire Wire Line
+	5925 1150 6000 1150
+Connection ~ 6000 1150
+Wire Wire Line
+	6000 1150 6000 1050
+Wire Wire Line
+	5925 1250 6000 1250
+Connection ~ 6000 1250
+Wire Wire Line
+	6000 1250 6000 1150
+Wire Wire Line
+	5925 1450 6000 1450
+Connection ~ 6000 1450
+Wire Wire Line
+	6000 1450 6000 1250
+$Comp
+L Device:C_Small C?
+U 1 1 5F517AF6
+P 6250 1800
+F 0 "C?" H 6200 1725 50  0000 R CNN
+F 1 "100n" H 6225 1875 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6250 1800 50  0001 C CNN
+F 3 "~" H 6250 1800 50  0001 C CNN
+	1    6250 1800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6250 1700 6250 1650
+Wire Wire Line
+	5925 1650 6250 1650
+$Comp
+L power:GND #PWR?
+U 1 1 5F51901D
+P 6250 1900
+F 0 "#PWR?" H 6250 1650 50  0001 C CNN
+F 1 "GND" H 6255 1727 50  0000 C CNN
+F 2 "" H 6250 1900 50  0001 C CNN
+F 3 "" H 6250 1900 50  0001 C CNN
+	1    6250 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 1650 6425 1650
+Connection ~ 6250 1650
+Text Label 6425 1650 0    50   ~ 0
+VREF
 $EndSCHEMATC
