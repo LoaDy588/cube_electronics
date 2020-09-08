@@ -326,8 +326,8 @@ $EndSheet
 $Sheet
 S 1625 3175 875  450 
 U 5F51A37F
-F0 "I/O" 50
-F1 "input_output.sch" 50
+F0 "Limit Switches" 50
+F1 "limit_sw.sch" 50
 F2 "3V3" I R 2500 3400 50 
 F3 "12V" I R 2500 3250 50 
 F4 "IO" B R 2500 3550 50 
