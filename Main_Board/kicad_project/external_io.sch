@@ -1,0 +1,619 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 9 9
+Title "Cube Main Board - External I/O"
+Date "2020-09-08"
+Rev "1"
+Comp "Oldřich Pecák (LoaDy)"
+Comment1 "Preliminary license: CERN OHWL-P v2 ?"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Interface:PCA9600DP U?
+U 1 1 5F70BE3C
+P 5875 4200
+F 0 "U?" H 5725 3850 50  0000 C CNN
+F 1 "PCA9600DP" H 6200 3850 50  0000 C CNN
+F 2 "Package_SO:TSSOP-8_3x3mm_P0.65mm" H 6675 3850 50  0001 C CNN
+F 3 "https://www.nxp.com/docs/en/data-sheet/PCA9600.pdf" H 5575 4650 50  0001 C CNN
+	1    5875 4200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:USB_B_Micro J?
+U 1 1 5F70DEC7
+P 4775 1675
+F 0 "J?" H 4950 1300 50  0000 C CNN
+F 1 "USB_B_Micro" H 4832 2051 50  0000 C CNN
+F 2 "Connector_USB:USB_Micro-B_Molex_47346-0001" H 4925 1625 50  0001 C CNN
+F 3 "~" H 4925 1625 50  0001 C CNN
+	1    4775 1675
+	1    0    0    -1  
+$EndComp
+$Comp
+L LoaDy:USBLC6-2SC6 U?
+U 1 1 5F71A98E
+P 6450 1725
+F 0 "U?" H 6450 2192 50  0000 C CNN
+F 1 "USBLC6-2SC6" H 6450 2101 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 7275 2125 50  0001 C CNN
+F 3 "http://www2.st.com/resource/en/datasheet/CD00050750.pdf" V 6800 1525 50  0001 C CNN
+	1    6450 1725
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F71E77C
+P 4775 2400
+F 0 "#PWR?" H 4775 2150 50  0001 C CNN
+F 1 "GND" H 4780 2227 50  0000 C CNN
+F 2 "" H 4775 2400 50  0001 C CNN
+F 3 "" H 4775 2400 50  0001 C CNN
+	1    4775 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5425 1475 5075 1475
+Wire Wire Line
+	5950 1525 5575 1525
+Wire Wire Line
+	5575 1525 5575 1675
+Wire Wire Line
+	5575 1675 5075 1675
+Wire Wire Line
+	5075 1775 5575 1775
+Wire Wire Line
+	5575 1775 5575 1925
+Wire Wire Line
+	5575 1925 5950 1925
+Wire Wire Line
+	5950 1725 5425 1725
+Wire Wire Line
+	5425 1725 5425 1475
+$Comp
+L Device:R_Small R?
+U 1 1 5F7222AA
+P 4675 2225
+F 0 "R?" H 4617 2179 50  0000 R CNN
+F 1 "33K" H 4617 2270 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4675 2225 50  0001 C CNN
+F 3 "~" H 4675 2225 50  0001 C CNN
+	1    4675 2225
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	4675 2325 4675 2375
+Wire Wire Line
+	4675 2375 4775 2375
+Wire Wire Line
+	4775 2375 4775 2400
+Wire Wire Line
+	4775 2375 4775 2075
+Connection ~ 4775 2375
+Wire Wire Line
+	4675 2125 4675 2075
+$Comp
+L power:GND #PWR?
+U 1 1 5F72339E
+P 7000 1725
+F 0 "#PWR?" H 7000 1475 50  0001 C CNN
+F 1 "GND" V 7005 1597 50  0000 R CNN
+F 2 "" H 7000 1725 50  0001 C CNN
+F 3 "" H 7000 1725 50  0001 C CNN
+	1    7000 1725
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7000 1725 6950 1725
+Entry Wire Line
+	7275 1525 7375 1625
+Entry Wire Line
+	7275 1925 7375 2025
+Wire Bus Line
+	7375 2100 7900 2100
+Text HLabel 7900 2100 2    50   BiDi ~ 10
+USB
+Wire Wire Line
+	6950 1525 7275 1525
+Wire Wire Line
+	6950 1925 7275 1925
+Text Label 7050 1925 0    50   ~ 0
+USB_DM
+Text Label 7050 1525 0    50   ~ 0
+USB_DP
+$Comp
+L Device:R_Small R?
+U 1 1 5F728398
+P 7650 4100
+F 0 "R?" V 7700 3975 50  0000 C CNN
+F 1 "0R" V 7600 4225 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 7650 4100 50  0001 C CNN
+F 3 "~" H 7650 4100 50  0001 C CNN
+	1    7650 4100
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5F728F58
+P 7650 4300
+F 0 "R?" V 7700 4175 50  0000 C CNN
+F 1 "0R" V 7600 4425 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 7650 4300 50  0001 C CNN
+F 3 "~" H 7650 4300 50  0001 C CNN
+	1    7650 4300
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	6175 4100 6275 4100
+Wire Wire Line
+	7550 4300 7475 4300
+$Comp
+L Device:Jumper_NO_Small JP?
+U 1 1 5F730E54
+P 7650 3950
+F 0 "JP?" H 7650 4100 50  0000 C CNN
+F 1 "SDA_JMP" H 7650 4025 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 7650 3950 50  0001 C CNN
+F 3 "~" H 7650 3950 50  0001 C CNN
+	1    7650 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper_NO_Small JP?
+U 1 1 5F7312C9
+P 7650 4450
+F 0 "JP?" H 7650 4600 50  0000 C CNN
+F 1 "SCL_JMP" H 7650 4525 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 7650 4450 50  0001 C CNN
+F 3 "~" H 7650 4450 50  0001 C CNN
+	1    7650 4450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7550 4450 7475 4450
+Wire Wire Line
+	7475 4450 7475 4300
+Connection ~ 7475 4300
+Wire Wire Line
+	7550 3950 7475 3950
+Wire Wire Line
+	7475 3950 7475 4100
+Connection ~ 7475 4100
+Wire Wire Line
+	7475 4100 7550 4100
+Wire Wire Line
+	7750 4100 7825 4100
+Wire Wire Line
+	7750 3950 7825 3950
+Wire Wire Line
+	7825 3950 7825 4100
+Connection ~ 7825 4100
+Wire Wire Line
+	7750 4300 7825 4300
+Wire Wire Line
+	7825 4300 7825 4450
+Wire Wire Line
+	7825 4450 7750 4450
+Connection ~ 7825 4300
+Wire Wire Line
+	6675 3650 6675 4300
+Wire Wire Line
+	6425 3650 6675 3650
+Wire Wire Line
+	6575 3750 6575 4100
+Wire Wire Line
+	6425 3750 6575 3750
+Wire Wire Line
+	6450 3850 6425 3850
+Wire Wire Line
+	6450 3875 6450 3850
+Wire Wire Line
+	6550 3550 6425 3550
+Text HLabel 6550 3550 2    50   Input ~ 0
+3V3
+$Comp
+L power:GND #PWR?
+U 1 1 5F72CC53
+P 6450 3875
+F 0 "#PWR?" H 6450 3625 50  0001 C CNN
+F 1 "GND" H 6455 3702 50  0000 C CNN
+F 2 "" H 6450 3875 50  0001 C CNN
+F 3 "" H 6450 3875 50  0001 C CNN
+	1    6450 3875
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J?
+U 1 1 5F729670
+P 6225 3650
+F 0 "J?" H 6350 3750 50  0000 C CNN
+F 1 "I2C_EXTERNAL" H 6143 3876 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 6225 3650 50  0001 C CNN
+F 3 "~" H 6225 3650 50  0001 C CNN
+	1    6225 3650
+	-1   0    0    -1  
+$EndComp
+Connection ~ 6575 4100
+Connection ~ 6675 4300
+Wire Wire Line
+	6675 4300 6175 4300
+Wire Wire Line
+	6575 4100 7000 4100
+Wire Wire Line
+	6675 4300 7000 4300
+$Comp
+L Device:R_Small R?
+U 1 1 5F74371A
+P 7000 3925
+F 0 "R?" H 6950 3875 50  0000 R CNN
+F 1 "4K7" H 6950 3975 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 7000 3925 50  0001 C CNN
+F 3 "~" H 7000 3925 50  0001 C CNN
+	1    7000 3925
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5F743EA7
+P 7100 3925
+F 0 "R?" H 7050 3875 50  0000 R CNN
+F 1 "4K7" H 7050 3975 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 7100 3925 50  0001 C CNN
+F 3 "~" H 7100 3925 50  0001 C CNN
+	1    7100 3925
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7000 4025 7000 4100
+Connection ~ 7000 4100
+Wire Wire Line
+	7000 4100 7475 4100
+Wire Wire Line
+	7100 4025 7100 4300
+Connection ~ 7100 4300
+Wire Wire Line
+	7100 4300 7475 4300
+Text HLabel 7150 3725 2    50   Input ~ 0
+3V3
+Wire Wire Line
+	7100 3825 7100 3725
+Wire Wire Line
+	7100 3725 7150 3725
+Wire Wire Line
+	7000 3825 7000 3725
+Wire Wire Line
+	7000 3725 7100 3725
+Connection ~ 7100 3725
+$Comp
+L power:GND #PWR?
+U 1 1 5F747299
+P 5875 4600
+F 0 "#PWR?" H 5875 4350 50  0001 C CNN
+F 1 "GND" H 5880 4427 50  0000 C CNN
+F 2 "" H 5875 4600 50  0001 C CNN
+F 3 "" H 5875 4600 50  0001 C CNN
+	1    5875 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J?
+U 1 1 5F7475E6
+P 3925 4150
+F 0 "J?" H 3900 3825 50  0000 C CNN
+F 1 "I2C_BUFFERED" H 4000 4375 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Horizontal" H 3925 4150 50  0001 C CNN
+F 3 "~" H 3925 4150 50  0001 C CNN
+	1    3925 4150
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5575 4000 5525 4000
+Wire Wire Line
+	5525 4000 5525 4100
+Wire Wire Line
+	5525 4100 5575 4100
+Wire Wire Line
+	5575 4300 5525 4300
+Wire Wire Line
+	5525 4300 5525 4400
+Wire Wire Line
+	5525 4400 5575 4400
+Wire Wire Line
+	5525 4300 5525 4250
+Connection ~ 5525 4300
+Wire Wire Line
+	5525 4100 5525 4150
+Wire Wire Line
+	5525 4150 5225 4150
+Connection ~ 5525 4100
+$Comp
+L Device:C_Small C?
+U 1 1 5F74C7A6
+P 5625 3575
+F 0 "C?" H 5650 3650 50  0000 L CNN
+F 1 "100n" H 5650 3500 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5625 3575 50  0001 C CNN
+F 3 "~" H 5625 3575 50  0001 C CNN
+	1    5625 3575
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F74C9C7
+P 5625 3675
+F 0 "#PWR?" H 5625 3425 50  0001 C CNN
+F 1 "GND" H 5630 3502 50  0000 C CNN
+F 2 "" H 5625 3675 50  0001 C CNN
+F 3 "" H 5625 3675 50  0001 C CNN
+	1    5625 3675
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5F74F68F
+P 5225 3800
+F 0 "R?" H 5175 3750 50  0000 R CNN
+F 1 "2K2" H 5175 3850 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5225 3800 50  0001 C CNN
+F 3 "~" H 5225 3800 50  0001 C CNN
+	1    5225 3800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5F74FC84
+P 5125 3800
+F 0 "R?" H 5075 3750 50  0000 R CNN
+F 1 "2K2" H 5075 3850 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5125 3800 50  0001 C CNN
+F 3 "~" H 5125 3800 50  0001 C CNN
+	1    5125 3800
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	5225 3900 5225 4150
+Connection ~ 5225 4150
+Wire Wire Line
+	5125 3900 5125 4250
+Wire Wire Line
+	5125 4250 5525 4250
+Wire Wire Line
+	4875 4050 4875 3400
+Wire Wire Line
+	4875 3400 5125 3400
+Wire Wire Line
+	5875 3400 5875 3800
+Wire Wire Line
+	5625 3475 5625 3400
+Connection ~ 5625 3400
+Wire Wire Line
+	5625 3400 5875 3400
+Wire Wire Line
+	4875 3400 4800 3400
+Connection ~ 4875 3400
+Wire Wire Line
+	5125 3700 5125 3400
+Connection ~ 5125 3400
+Wire Wire Line
+	5125 3400 5225 3400
+Wire Wire Line
+	5225 3700 5225 3400
+Connection ~ 5225 3400
+Wire Wire Line
+	5225 3400 5625 3400
+Connection ~ 5125 4250
+Wire Wire Line
+	4150 4350 4125 4350
+Wire Wire Line
+	4150 4375 4150 4350
+$Comp
+L power:GND #PWR?
+U 1 1 5F76116E
+P 4150 4375
+F 0 "#PWR?" H 4150 4125 50  0001 C CNN
+F 1 "GND" H 4155 4202 50  0000 C CNN
+F 2 "" H 4150 4375 50  0001 C CNN
+F 3 "" H 4150 4375 50  0001 C CNN
+	1    4150 4375
+	1    0    0    -1  
+$EndComp
+Text HLabel 4800 3400 0    50   Input ~ 0
+12V
+Entry Wire Line
+	8100 4100 8200 4200
+Entry Wire Line
+	8100 4300 8200 4400
+Wire Bus Line
+	8200 4525 8450 4525
+Text HLabel 8450 4525 2    50   BiDi ~ 10
+I2C
+Text Label 7875 4100 0    50   ~ 0
+I2C_SDA
+Text Label 7875 4300 0    50   ~ 0
+I2C_SCL
+Wire Wire Line
+	7825 4300 8100 4300
+Wire Wire Line
+	7825 4100 8100 4100
+$Comp
+L Device:D_Zener_x2_ACom_KKA D?
+U 1 1 5F783DBC
+P 4700 4475
+AR Path="/5F51A37F/5F783DBC" Ref="D?"  Part="1" 
+AR Path="/5F709561/5F783DBC" Ref="D?"  Part="1" 
+F 0 "D?" H 4600 4375 50  0000 C CNN
+F 1 "PESD12VS2UT" H 4700 4575 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4700 4475 50  0001 C CNN
+F 3 "~" H 4700 4475 50  0001 C CNN
+	1    4700 4475
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4125 4050 4875 4050
+Wire Wire Line
+	4125 4150 4350 4150
+Wire Wire Line
+	4125 4250 5050 4250
+Wire Wire Line
+	5000 4475 5050 4475
+Wire Wire Line
+	5050 4475 5050 4250
+Connection ~ 5050 4250
+Wire Wire Line
+	5050 4250 5125 4250
+Wire Wire Line
+	4400 4475 4350 4475
+Wire Wire Line
+	4350 4475 4350 4150
+Connection ~ 4350 4150
+Wire Wire Line
+	4350 4150 5225 4150
+$Comp
+L power:GND #PWR?
+U 1 1 5F79653C
+P 4700 4675
+F 0 "#PWR?" H 4700 4425 50  0001 C CNN
+F 1 "GND" H 4705 4502 50  0000 C CNN
+F 2 "" H 4700 4675 50  0001 C CNN
+F 3 "" H 4700 4675 50  0001 C CNN
+	1    4700 4675
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J?
+U 1 1 5F7AC162
+P 5250 5600
+F 0 "J?" H 5225 5275 50  0000 C CNN
+F 1 "DATA_UART" H 5325 5825 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Horizontal" H 5250 5600 50  0001 C CNN
+F 3 "~" H 5250 5600 50  0001 C CNN
+	1    5250 5600
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5475 5800 5450 5800
+Wire Wire Line
+	5475 5825 5475 5800
+$Comp
+L power:GND #PWR?
+U 1 1 5F7AC5CD
+P 5475 5825
+F 0 "#PWR?" H 5475 5575 50  0001 C CNN
+F 1 "GND" H 5480 5652 50  0000 C CNN
+F 2 "" H 5475 5825 50  0001 C CNN
+F 3 "" H 5475 5825 50  0001 C CNN
+	1    5475 5825
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Zener_x2_ACom_KKA D?
+U 1 1 5F7AEF18
+P 6025 5900
+AR Path="/5F51A37F/5F7AEF18" Ref="D?"  Part="1" 
+AR Path="/5F709561/5F7AEF18" Ref="D?"  Part="1" 
+F 0 "D?" H 5925 5800 50  0000 C CNN
+F 1 "PESD3V3S2UT" H 6025 6000 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 6025 5900 50  0001 C CNN
+F 3 "~" H 6025 5900 50  0001 C CNN
+	1    6025 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F7AEF22
+P 6025 6100
+F 0 "#PWR?" H 6025 5850 50  0001 C CNN
+F 1 "GND" H 6030 5927 50  0000 C CNN
+F 2 "" H 6025 6100 50  0001 C CNN
+F 3 "" H 6025 6100 50  0001 C CNN
+	1    6025 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5575 5500 5450 5500
+Text HLabel 5575 5500 2    50   Input ~ 0
+3V3
+Wire Wire Line
+	5450 5700 6350 5700
+Wire Wire Line
+	5450 5600 5700 5600
+Wire Wire Line
+	6350 5900 6350 5700
+Connection ~ 6350 5700
+Wire Wire Line
+	6350 5900 6325 5900
+Wire Wire Line
+	5725 5900 5700 5900
+Wire Wire Line
+	5700 5900 5700 5600
+Connection ~ 5700 5600
+Text Label 6650 5600 2    50   ~ 0
+DATA_UART_TX
+Text Label 6650 5700 2    50   ~ 0
+DATA_UART_RX
+Entry Wire Line
+	6675 5600 6775 5700
+Entry Wire Line
+	6675 5700 6775 5800
+Wire Wire Line
+	5700 5600 6675 5600
+Wire Wire Line
+	6350 5700 6675 5700
+Wire Bus Line
+	6775 5875 6900 5875
+Text HLabel 6900 5875 2    50   BiDi ~ 10
+DATA_UART
+Text Notes 700  925  0    200  ~ 0
+External I/O with protection
+Text Notes 7925 3825 0    50   ~ 0
+Jumpers to disconnect I2C\nUser can directly use the I2C buffer
+$Comp
+L Device:D_Zener_x2_ACom_KKA D?
+U 1 1 5F818BA4
+P 6650 4500
+AR Path="/5F51A37F/5F818BA4" Ref="D?"  Part="1" 
+AR Path="/5F709561/5F818BA4" Ref="D?"  Part="1" 
+F 0 "D?" H 6550 4400 50  0000 C CNN
+F 1 "PESD3V3S2UT" H 6650 4600 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 6650 4500 50  0001 C CNN
+F 3 "~" H 6650 4500 50  0001 C CNN
+	1    6650 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F818BAE
+P 6650 4700
+F 0 "#PWR?" H 6650 4450 50  0001 C CNN
+F 1 "GND" H 6655 4527 50  0000 C CNN
+F 2 "" H 6650 4700 50  0001 C CNN
+F 3 "" H 6650 4700 50  0001 C CNN
+	1    6650 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 4500 6275 4500
+Wire Wire Line
+	6275 4500 6275 4100
+Connection ~ 6275 4100
+Wire Wire Line
+	6275 4100 6575 4100
+Wire Wire Line
+	6950 4500 7000 4500
+Wire Wire Line
+	7000 4500 7000 4300
+Connection ~ 7000 4300
+Wire Wire Line
+	7000 4300 7100 4300
+Wire Bus Line
+	6775 5700 6775 5875
+Wire Bus Line
+	8200 4200 8200 4525
+Wire Bus Line
+	7375 1625 7375 2100
+$EndSCHEMATC
