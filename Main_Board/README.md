@@ -12,7 +12,7 @@ This is the main control board for Cube.
 
 ## TODO
 - MCU pinout
-    - debug interface
+    - debug interfacemm
     - steppers
     - usb
     - debug leds
