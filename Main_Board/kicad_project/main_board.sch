@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 8
+Sheet 1 9
 Title "Cube Main Board - top level schematic"
 Date ""
 Rev ""
@@ -154,7 +154,7 @@ F 3 "" H 9475 5200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Sheet
-S 1050 925  650  475 
+S 1050 925  650  450 
 U 5F4D5F3E
 F0 "Power" 50
 F1 "power.sch" 50
@@ -318,18 +318,29 @@ F 3 "" H 9750 4350 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Sheet
-S 4550 2625 1475 2100
+S 4750 700  1475 2100
 U 5F5463C2
 F0 "MCU" 50
 F1 "MCU.sch" 50
 $EndSheet
 $Sheet
-S 1625 3175 875  450 
+S 1550 2925 875  450 
 U 5F51A37F
 F0 "Limit Switches" 50
 F1 "limit_sw.sch" 50
-F2 "3V3" I R 2500 3400 50 
-F3 "12V" I R 2500 3250 50 
-F4 "IO" B R 2500 3550 50 
+F2 "3V3" I R 2425 3150 50 
+F3 "12V" I R 2425 3000 50 
+F4 "IO" B R 2425 3300 50 
+$EndSheet
+$Sheet
+S 1575 3950 900  750 
+U 5F709561
+F0 "External I/O" 50
+F1 "external_io.sch" 50
+F2 "USB" B R 2475 4325 50 
+F3 "3V3" I R 2475 4175 50 
+F4 "12V" I R 2475 4025 50 
+F5 "I2C" B R 2475 4475 50 
+F6 "DATA_UART" B R 2475 4625 50 
 $EndSheet
 $EndSCHEMATC
