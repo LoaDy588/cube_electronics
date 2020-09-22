@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 9
+Sheet 8 9
 Title ""
 Date ""
 Rev ""
@@ -658,10 +658,6 @@ Entry Wire Line
 	7325 4725 7225 4825
 Entry Wire Line
 	7325 4825 7225 4925
-Wire Bus Line
-	7225 5000 7075 5000
-Text HLabel 7075 5000 0    50   BiDi ~ 10
-LS_IO
 Text Label 7325 3925 0    50   ~ 0
 IO1
 Text Label 7325 4025 0    50   ~ 0
@@ -706,4 +702,6 @@ Wire Wire Line
 	7325 3925 7500 3925
 Wire Bus Line
 	7225 4025 7225 5000
+Text HLabel 7225 5000 0    50   BiDi ~ 10
+IO[1...10]
 $EndSCHEMATC

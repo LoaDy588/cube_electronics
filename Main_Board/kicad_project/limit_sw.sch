@@ -218,7 +218,7 @@ F 3 "" H 3025 2825 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text HLabel 1550 3925 0    50   BiDi ~ 10
-IO
+IO[1...10]
 Entry Wire Line
 	2700 3825 2600 3925
 Entry Wire Line
