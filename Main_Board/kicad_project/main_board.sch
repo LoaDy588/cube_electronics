@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 9
+Sheet 1 10
 Title "Cube Main Board - top level schematic"
 Date ""
 Rev ""
@@ -355,4 +355,10 @@ Wire Bus Line
 	4475 2925 4475 2875
 Wire Bus Line
 	4475 2875 5225 2875
+$Sheet
+S 3025 4625 875  1300
+U 5FDB67B7
+F0 "expansion" 50
+F1 "expansion.sch" 50
+$EndSheet
 $EndSCHEMATC

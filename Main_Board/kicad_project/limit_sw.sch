@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 8 9
+Sheet 9 10
 Title "Cube Main Board - Limit switches I/O"
 Date "2020-09-08"
 Rev "1.1"
