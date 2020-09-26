@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 10 10
 Title "Cube Main Board - Expansion Header"
-Date "2020-09-23"
-Rev "1"
+Date "2020-09-26"
+Rev "1.1"
 Comp "Oldřich Pecák (LoaDy)"
 Comment1 "Licensed under CERN-OHL-P v2"
 Comment2 ""
@@ -197,10 +197,10 @@ Text HLabel 2225 6650 0    50   BiDi ~ 10
 EXP_IO[1...30]
 Text HLabel 6075 3725 0    50   Input ~ 0
 12V
-Text HLabel 6075 3825 0    50   Input ~ 0
+Text HLabel 6075 3925 0    50   Input ~ 0
 3V3
 $Comp
-L Connector_Generic:Conn_02x20_Odd_Even J24
+L Connector_Generic:Conn_02x20_Top_Bottom J24
 U 1 1 5F6C9435
 P 6375 4625
 F 0 "J24" H 6425 5742 50  0000 C CNN
@@ -214,10 +214,6 @@ Wire Wire Line
 	6175 3725 6075 3725
 Wire Wire Line
 	6075 3825 6175 3825
-Wire Wire Line
-	6675 3825 6775 3825
-Wire Wire Line
-	6775 3725 6675 3725
 $Comp
 L Device:D_Zener_x2_ACom_KKA D?
 U 1 1 5F700FEC
@@ -244,443 +240,213 @@ F 3 "" H 5875 1000 50  0001 C CNN
 	1    5875 1000
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6175 4425 6075 4425
-Wire Wire Line
-	6075 4425 6075 5025
-Wire Wire Line
-	6075 5025 6175 5025
-Wire Wire Line
-	6075 5025 6075 5625
-Wire Wire Line
-	6075 5625 6175 5625
-Connection ~ 6075 5025
-Wire Wire Line
-	6075 5625 6075 5825
-Connection ~ 6075 5625
-Wire Wire Line
-	6775 5825 6775 5625
-Wire Wire Line
-	6775 5625 6675 5625
-Wire Wire Line
-	6775 5625 6775 5025
-Wire Wire Line
-	6775 5025 6675 5025
-Connection ~ 6775 5625
-Wire Wire Line
-	6775 5025 6775 4425
-Wire Wire Line
-	6775 4425 6675 4425
-Connection ~ 6775 5025
 $Comp
 L Device:R_Pack04 RN1
 U 1 1 5F70A46D
-P 5525 4075
-F 0 "RN1" V 5725 3950 50  0000 C CNN
-F 1 "150R" V 5725 4175 50  0000 C CNN
-F 2 "Resistor_SMD:R_Array_Convex_4x1206" V 5800 4075 50  0001 C CNN
-F 3 "~" H 5525 4075 50  0001 C CNN
-	1    5525 4075
-	0    1    1    0   
+P 5450 4225
+F 0 "RN1" V 5150 4100 50  0000 C CNN
+F 1 "150R" V 5150 4325 50  0000 C CNN
+F 2 "Resistor_SMD:R_Array_Convex_4x1206" V 5725 4225 50  0001 C CNN
+F 3 "~" H 5450 4225 50  0001 C CNN
+	1    5450 4225
+	0    1    -1   0   
 $EndComp
 $Comp
 L Device:R_Pack04 RN2
 U 1 1 5F7229AE
-P 5525 4575
-F 0 "RN2" V 5725 4450 50  0000 C CNN
-F 1 "150R" V 5725 4675 50  0000 C CNN
-F 2 "Resistor_SMD:R_Array_Convex_4x1206" V 5800 4575 50  0001 C CNN
-F 3 "~" H 5525 4575 50  0001 C CNN
-	1    5525 4575
-	0    1    1    0   
+P 5450 4725
+F 0 "RN2" V 5150 4600 50  0000 C CNN
+F 1 "150R" V 5150 4825 50  0000 C CNN
+F 2 "Resistor_SMD:R_Array_Convex_4x1206" V 5725 4725 50  0001 C CNN
+F 3 "~" H 5450 4725 50  0001 C CNN
+	1    5450 4725
+	0    1    -1   0   
 $EndComp
 $Comp
 L Device:R_Pack04 RN3
 U 1 1 5F722E48
-P 5525 5075
-F 0 "RN3" V 5725 4950 50  0000 C CNN
-F 1 "150R" V 5725 5175 50  0000 C CNN
-F 2 "Resistor_SMD:R_Array_Convex_4x1206" V 5800 5075 50  0001 C CNN
-F 3 "~" H 5525 5075 50  0001 C CNN
-	1    5525 5075
-	0    1    1    0   
+P 5450 5225
+F 0 "RN3" V 5150 5100 50  0000 C CNN
+F 1 "150R" V 5150 5325 50  0000 C CNN
+F 2 "Resistor_SMD:R_Array_Convex_4x1206" V 5725 5225 50  0001 C CNN
+F 3 "~" H 5450 5225 50  0001 C CNN
+	1    5450 5225
+	0    1    -1   0   
 $EndComp
 $Comp
 L Device:R_Pack04 RN4
 U 1 1 5F7235A3
-P 5525 5575
-F 0 "RN4" V 5725 5450 50  0000 C CNN
-F 1 "150R" V 5725 5675 50  0000 C CNN
-F 2 "Resistor_SMD:R_Array_Convex_4x1206" V 5800 5575 50  0001 C CNN
-F 3 "~" H 5525 5575 50  0001 C CNN
-	1    5525 5575
-	0    1    1    0   
+P 5450 5725
+F 0 "RN4" V 5150 5600 50  0000 C CNN
+F 1 "150R" V 5150 5825 50  0000 C CNN
+F 2 "Resistor_SMD:R_Array_Convex_4x1206" V 5725 5725 50  0001 C CNN
+F 3 "~" H 5450 5725 50  0001 C CNN
+	1    5450 5725
+	0    1    -1   0   
 $EndComp
 Wire Wire Line
-	6075 5825 6425 5825
+	5250 4125 5150 4125
 Wire Wire Line
-	6425 5825 6425 5900
-Connection ~ 6425 5825
+	5250 4225 5150 4225
 Wire Wire Line
-	6425 5825 6775 5825
-$Comp
-L power:GND #PWR0109
-U 1 1 5F72C5ED
-P 6425 5900
-F 0 "#PWR0109" H 6425 5650 50  0001 C CNN
-F 1 "GND" H 6430 5727 50  0000 C CNN
-F 2 "" H 6425 5900 50  0001 C CNN
-F 3 "" H 6425 5900 50  0001 C CNN
-	1    6425 5900
-	1    0    0    -1  
-$EndComp
+	5250 4325 5150 4325
 Wire Wire Line
-	5725 3975 5800 3975
+	5250 4425 5150 4425
 Wire Wire Line
-	5800 3975 5800 4025
+	5250 4625 5150 4625
 Wire Wire Line
-	5800 4025 6175 4025
+	5250 4725 5150 4725
 Wire Wire Line
-	5825 4125 5825 4075
+	5250 4825 5150 4825
 Wire Wire Line
-	5825 4075 5725 4075
+	5250 4925 5150 4925
 Wire Wire Line
-	5825 4125 6175 4125
+	5250 5125 5150 5125
 Wire Wire Line
-	5850 4225 5850 4175
+	5250 5225 5150 5225
 Wire Wire Line
-	5850 4175 5725 4175
+	5250 5325 5150 5325
 Wire Wire Line
-	5850 4225 6175 4225
+	5250 5425 5150 5425
 Wire Wire Line
-	5775 3925 5775 3875
+	5250 5625 5150 5625
 Wire Wire Line
-	5775 3875 5725 3875
+	5250 5725 5150 5725
 Wire Wire Line
-	5775 3925 6175 3925
+	7525 5425 7625 5425
 Wire Wire Line
-	5850 4325 5850 4375
+	7525 5325 7625 5325
 Wire Wire Line
-	5850 4375 5725 4375
+	7525 5225 7625 5225
 Wire Wire Line
-	5850 4325 6175 4325
+	7525 5025 7625 5025
 Wire Wire Line
-	5850 4525 5850 4475
+	7525 4925 7625 4925
 Wire Wire Line
-	5850 4475 5725 4475
+	7525 4825 7625 4825
 Wire Wire Line
-	5850 4525 6175 4525
+	7525 4725 7625 4725
 Wire Wire Line
-	5825 4625 5825 4575
+	7525 4525 7625 4525
 Wire Wire Line
-	5825 4575 5725 4575
+	7525 4425 7625 4425
 Wire Wire Line
-	5825 4625 6175 4625
+	7525 4325 7625 4325
 Wire Wire Line
-	5800 4725 5800 4675
+	7525 4225 7625 4225
 Wire Wire Line
-	5800 4675 5725 4675
+	7525 4025 7625 4025
 Wire Wire Line
-	5800 4725 6175 4725
+	7525 3925 7625 3925
 Wire Wire Line
-	5800 4825 5800 4875
+	7525 3825 7625 3825
 Wire Wire Line
-	5800 4875 5725 4875
-Wire Wire Line
-	5800 4825 6175 4825
-Wire Wire Line
-	5825 4925 5825 4975
-Wire Wire Line
-	5825 4975 5725 4975
-Wire Wire Line
-	5825 4925 6175 4925
-Wire Wire Line
-	5825 5125 5825 5075
-Wire Wire Line
-	5825 5075 5725 5075
-Wire Wire Line
-	5825 5125 6175 5125
-Wire Wire Line
-	5800 5225 5800 5175
-Wire Wire Line
-	5800 5175 5725 5175
-Wire Wire Line
-	5800 5225 6175 5225
-Wire Wire Line
-	5800 5325 5800 5375
-Wire Wire Line
-	5800 5375 5725 5375
-Wire Wire Line
-	5800 5325 6175 5325
-Wire Wire Line
-	5825 5425 5825 5475
-Wire Wire Line
-	5825 5475 5725 5475
-Wire Wire Line
-	5825 5425 6175 5425
-Wire Wire Line
-	5850 5525 5850 5575
-Wire Wire Line
-	5850 5575 5725 5575
-Wire Wire Line
-	5850 5525 6175 5525
-Wire Wire Line
-	5325 3875 5225 3875
-Wire Wire Line
-	5325 3975 5225 3975
-Wire Wire Line
-	5325 4075 5225 4075
-Wire Wire Line
-	5325 4175 5225 4175
-Wire Wire Line
-	5325 4375 5225 4375
-Wire Wire Line
-	5325 4475 5225 4475
-Wire Wire Line
-	5325 4575 5225 4575
-Wire Wire Line
-	5325 4675 5225 4675
-Wire Wire Line
-	5325 4875 5225 4875
-Wire Wire Line
-	5325 4975 5225 4975
-Wire Wire Line
-	5325 5075 5225 5075
-Wire Wire Line
-	5325 5175 5225 5175
-Wire Wire Line
-	5325 5375 5225 5375
-Wire Wire Line
-	5325 5475 5225 5475
-Wire Wire Line
-	5325 5575 5225 5575
-Wire Wire Line
-	7525 5575 7625 5575
-Wire Wire Line
-	7525 5475 7625 5475
-Wire Wire Line
-	7525 5375 7625 5375
-Wire Wire Line
-	7525 5175 7625 5175
-Wire Wire Line
-	7525 5075 7625 5075
-Wire Wire Line
-	7525 4975 7625 4975
-Wire Wire Line
-	7525 4875 7625 4875
-Wire Wire Line
-	7525 4675 7625 4675
-Wire Wire Line
-	7525 4575 7625 4575
-Wire Wire Line
-	7525 4475 7625 4475
-Wire Wire Line
-	7525 4375 7625 4375
-Wire Wire Line
-	7525 4175 7625 4175
-Wire Wire Line
-	7525 4075 7625 4075
-Wire Wire Line
-	7525 3975 7625 3975
-Wire Wire Line
-	7525 3875 7625 3875
-Wire Wire Line
-	7000 5525 6675 5525
-Wire Wire Line
-	7000 5575 7125 5575
-Wire Wire Line
-	7000 5525 7000 5575
-Wire Wire Line
-	7025 5425 6675 5425
-Wire Wire Line
-	7025 5475 7125 5475
-Wire Wire Line
-	7025 5425 7025 5475
-Wire Wire Line
-	7050 5325 6675 5325
-Wire Wire Line
-	7050 5375 7125 5375
-Wire Wire Line
-	7050 5325 7050 5375
-Wire Wire Line
-	7050 5225 6675 5225
-Wire Wire Line
-	7050 5175 7125 5175
-Wire Wire Line
-	7050 5225 7050 5175
-Wire Wire Line
-	7025 5125 6675 5125
-Wire Wire Line
-	7025 5075 7125 5075
-Wire Wire Line
-	7025 5125 7025 5075
-Wire Wire Line
-	7025 4925 6675 4925
-Wire Wire Line
-	7025 4975 7125 4975
-Wire Wire Line
-	7025 4925 7025 4975
-Wire Wire Line
-	7050 4825 6675 4825
-Wire Wire Line
-	7050 4875 7125 4875
-Wire Wire Line
-	7050 4825 7050 4875
-Wire Wire Line
-	7050 4725 6675 4725
-Wire Wire Line
-	7050 4675 7125 4675
-Wire Wire Line
-	7050 4725 7050 4675
-Wire Wire Line
-	7025 4625 6675 4625
-Wire Wire Line
-	7025 4575 7125 4575
-Wire Wire Line
-	7025 4625 7025 4575
-Wire Wire Line
-	7000 4525 6675 4525
-Wire Wire Line
-	7000 4475 7125 4475
-Wire Wire Line
-	7000 4525 7000 4475
-Wire Wire Line
-	7000 4325 6675 4325
-Wire Wire Line
-	7000 4375 7125 4375
-Wire Wire Line
-	7000 4325 7000 4375
-Wire Wire Line
-	7075 3925 6675 3925
-Wire Wire Line
-	7075 3875 7125 3875
-Wire Wire Line
-	7075 3925 7075 3875
-Wire Wire Line
-	7000 4225 6675 4225
-Wire Wire Line
-	7000 4175 7125 4175
-Wire Wire Line
-	7000 4225 7000 4175
-Wire Wire Line
-	7025 4125 6675 4125
-Wire Wire Line
-	7025 4075 7125 4075
-Wire Wire Line
-	7025 4125 7025 4075
-Wire Wire Line
-	7050 4025 6675 4025
-Wire Wire Line
-	7050 3975 7050 4025
-Wire Wire Line
-	7125 3975 7050 3975
+	7525 3725 7625 3725
 $Comp
 L Device:R_Pack04 RN8
 U 1 1 5F7BEEA3
-P 7325 5575
-F 0 "RN8" V 7525 5450 50  0000 C CNN
-F 1 "150R" V 7525 5675 50  0000 C CNN
-F 2 "Resistor_SMD:R_Array_Convex_4x1206" V 7600 5575 50  0001 C CNN
-F 3 "~" H 7325 5575 50  0001 C CNN
-	1    7325 5575
-	0    -1   1    0   
+P 7325 5325
+F 0 "RN8" V 7025 5225 50  0000 C CNN
+F 1 "150R" V 7025 5425 50  0000 C CNN
+F 2 "Resistor_SMD:R_Array_Convex_4x1206" V 7600 5325 50  0001 C CNN
+F 3 "~" H 7325 5325 50  0001 C CNN
+	1    7325 5325
+	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R_Pack04 RN7
 U 1 1 5F7BEE99
-P 7325 5075
-F 0 "RN7" V 7525 4950 50  0000 C CNN
-F 1 "150R" V 7525 5175 50  0000 C CNN
-F 2 "Resistor_SMD:R_Array_Convex_4x1206" V 7600 5075 50  0001 C CNN
-F 3 "~" H 7325 5075 50  0001 C CNN
-	1    7325 5075
-	0    -1   1    0   
+P 7325 4825
+F 0 "RN7" V 7025 4725 50  0000 C CNN
+F 1 "150R" V 7025 4925 50  0000 C CNN
+F 2 "Resistor_SMD:R_Array_Convex_4x1206" V 7600 4825 50  0001 C CNN
+F 3 "~" H 7325 4825 50  0001 C CNN
+	1    7325 4825
+	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R_Pack04 RN6
 U 1 1 5F7BEE8F
-P 7325 4575
-F 0 "RN6" V 7525 4450 50  0000 C CNN
-F 1 "150R" V 7525 4675 50  0000 C CNN
-F 2 "Resistor_SMD:R_Array_Convex_4x1206" V 7600 4575 50  0001 C CNN
-F 3 "~" H 7325 4575 50  0001 C CNN
-	1    7325 4575
-	0    -1   1    0   
+P 7325 4325
+F 0 "RN6" V 7025 4225 50  0000 C CNN
+F 1 "150R" V 7025 4425 50  0000 C CNN
+F 2 "Resistor_SMD:R_Array_Convex_4x1206" V 7600 4325 50  0001 C CNN
+F 3 "~" H 7325 4325 50  0001 C CNN
+	1    7325 4325
+	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R_Pack04 RN5
 U 1 1 5F7BEE85
-P 7325 4075
-F 0 "RN5" V 7525 3950 50  0000 C CNN
-F 1 "150R" V 7525 4175 50  0000 C CNN
-F 2 "Resistor_SMD:R_Array_Convex_4x1206" V 7600 4075 50  0001 C CNN
-F 3 "~" H 7325 4075 50  0001 C CNN
-	1    7325 4075
-	0    -1   1    0   
+P 7325 3825
+F 0 "RN5" V 7025 3725 50  0000 C CNN
+F 1 "150R" V 7025 3925 50  0000 C CNN
+F 2 "Resistor_SMD:R_Array_Convex_4x1206" V 7600 3825 50  0001 C CNN
+F 3 "~" H 7325 3825 50  0001 C CNN
+	1    7325 3825
+	0    -1   -1   0   
 $EndComp
-Text HLabel 6775 3825 2    50   Input ~ 0
-3V3
-Text HLabel 6775 3725 2    50   Input ~ 0
+Text HLabel 6075 3825 0    50   Input ~ 0
 12V
-Text Label 5225 4875 2    50   ~ 0
+Text Label 5150 5125 2    50   ~ 0
 EXP_IO9
-Text Label 5225 3975 2    50   ~ 0
+Text Label 5150 4225 2    50   ~ 0
 EXP_IO2
-Text Label 5225 4075 2    50   ~ 0
+Text Label 5150 4325 2    50   ~ 0
 EXP_IO3
-Text Label 5225 4175 2    50   ~ 0
+Text Label 5150 4425 2    50   ~ 0
 EXP_IO4
-Text Label 5225 4375 2    50   ~ 0
+Text Label 5150 4625 2    50   ~ 0
 EXP_IO5
-Text Label 5225 4475 2    50   ~ 0
+Text Label 5150 4725 2    50   ~ 0
 EXP_IO6
-Text Label 5225 4575 2    50   ~ 0
+Text Label 5150 4825 2    50   ~ 0
 EXP_IO7
-Text Label 5225 4675 2    50   ~ 0
+Text Label 5150 4925 2    50   ~ 0
 EXP_IO8
-Text Label 5225 4975 2    50   ~ 0
+Text Label 5150 5225 2    50   ~ 0
 EXP_IO10
-Text Label 5225 5075 2    50   ~ 0
+Text Label 5150 5325 2    50   ~ 0
 EXP_IO11
-Text Label 5225 5175 2    50   ~ 0
+Text Label 5150 5425 2    50   ~ 0
 EXP_IO12
-Text Label 5225 5375 2    50   ~ 0
+Text Label 5150 5625 2    50   ~ 0
 EXP_IO13
-Text Label 5225 5475 2    50   ~ 0
+Text Label 5150 5725 2    50   ~ 0
 EXP_IO14
-Text Label 5225 5575 2    50   ~ 0
+Text Label 7625 3725 0    50   ~ 0
 EXP_IO15
-Text Label 5225 3875 2    50   ~ 0
+Text Label 5150 4125 2    50   ~ 0
 EXP_IO1
-Text Label 7625 3975 0    50   ~ 0
+Text Label 7625 3925 0    50   ~ 0
 EXP_IO17
-Text Label 7625 3875 0    50   ~ 0
+Text Label 7625 3825 0    50   ~ 0
 EXP_IO16
-Text Label 7625 4075 0    50   ~ 0
+Text Label 7625 4025 0    50   ~ 0
 EXP_IO18
-Text Label 7625 4175 0    50   ~ 0
+Text Label 7625 4225 0    50   ~ 0
 EXP_IO19
-Text Label 7625 4375 0    50   ~ 0
+Text Label 7625 4325 0    50   ~ 0
 EXP_IO20
-Text Label 7625 4475 0    50   ~ 0
+Text Label 7625 4425 0    50   ~ 0
 EXP_IO21
-Text Label 7625 4575 0    50   ~ 0
+Text Label 7625 4525 0    50   ~ 0
 EXP_IO22
-Text Label 7625 4675 0    50   ~ 0
+Text Label 7625 4725 0    50   ~ 0
 EXP_IO23
-Text Label 7625 4875 0    50   ~ 0
+Text Label 7625 4825 0    50   ~ 0
 EXP_IO24
-Text Label 7625 4975 0    50   ~ 0
+Text Label 7625 4925 0    50   ~ 0
 EXP_IO25
-Text Label 7625 5075 0    50   ~ 0
+Text Label 7625 5025 0    50   ~ 0
 EXP_IO26
-Text Label 7625 5175 0    50   ~ 0
+Text Label 7625 5225 0    50   ~ 0
 EXP_IO27
-Text Label 7625 5375 0    50   ~ 0
+Text Label 7625 5325 0    50   ~ 0
 EXP_IO28
-Text Label 7625 5475 0    50   ~ 0
+Text Label 7625 5425 0    50   ~ 0
 EXP_IO29
-Text Label 7625 5575 0    50   ~ 0
+Text Label 7625 5525 0    50   ~ 0
 EXP_IO30
 $Comp
 L Device:D_Zener_x2_ACom_KKA D?
@@ -1076,40 +842,218 @@ Text Label 8900 1400 0    50   ~ 0
 EXP_IO14
 Text Label 9650 1400 2    50   ~ 0
 EXP_IO15
-Text Label 10250 1400 0    50   ~ 0
-EXP_IO30
-Text Label 5575 1975 2    50   ~ 0
-EXP_IO16
-Text Label 6175 1975 0    50   ~ 0
-EXP_IO17
-Text Label 6925 1975 2    50   ~ 0
-EXP_IO18
-Text Label 7525 1975 0    50   ~ 0
-EXP_IO19
-Text Label 8300 1975 2    50   ~ 0
-EXP_IO20
-Text Label 8900 1975 0    50   ~ 0
-EXP_IO21
-Text Label 9650 1975 2    50   ~ 0
-EXP_IO22
-Text Label 10250 1975 0    50   ~ 0
-EXP_IO23
-Text Label 5575 2575 2    50   ~ 0
-EXP_IO24
-Text Label 6175 2575 0    50   ~ 0
-EXP_IO25
-Text Label 6925 2575 2    50   ~ 0
-EXP_IO26
-Text Label 7525 2575 0    50   ~ 0
-EXP_IO27
-Text Label 8300 2575 2    50   ~ 0
-EXP_IO28
 Text Label 8900 2575 0    50   ~ 0
+EXP_IO30
+Text Label 10250 1400 0    50   ~ 0
+EXP_IO16
+Text Label 5575 1975 2    50   ~ 0
+EXP_IO17
+Text Label 6175 1975 0    50   ~ 0
+EXP_IO18
+Text Label 6925 1975 2    50   ~ 0
+EXP_IO19
+Text Label 7525 1975 0    50   ~ 0
+EXP_IO20
+Text Label 8300 1975 2    50   ~ 0
+EXP_IO21
+Text Label 8900 1975 0    50   ~ 0
+EXP_IO22
+Text Label 9650 1975 2    50   ~ 0
+EXP_IO23
+Text Label 10250 1975 0    50   ~ 0
+EXP_IO24
+Text Label 5575 2575 2    50   ~ 0
+EXP_IO25
+Text Label 6175 2575 0    50   ~ 0
+EXP_IO26
+Text Label 6925 2575 2    50   ~ 0
+EXP_IO27
+Text Label 7525 2575 0    50   ~ 0
+EXP_IO28
+Text Label 8300 2575 2    50   ~ 0
 EXP_IO29
 Text Notes 1000 1125 0    200  ~ 0
 Expansion Header
 Text Notes 1025 1525 0    50   ~ 0
 Each signal pin protected with TVS diode and 150 ohm series resistor.\nConnector is IDC 40 pin, designed to have both cable or a board plugged into.\nPCB should include standoffs for larger expansion boards.
+$Comp
+L power:GND #PWR0109
+U 1 1 5F72C5ED
+P 6425 5900
+F 0 "#PWR0109" H 6425 5650 50  0001 C CNN
+F 1 "GND" H 6430 5727 50  0000 C CNN
+F 2 "" H 6425 5900 50  0001 C CNN
+F 3 "" H 6425 5900 50  0001 C CNN
+	1    6425 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6175 3925 6075 3925
+Wire Wire Line
+	6175 4025 6075 4025
+Text HLabel 6075 4025 0    50   Input ~ 0
+3V3
+Wire Wire Line
+	6075 5775 6425 5775
+Wire Wire Line
+	6425 5775 6425 5900
+Wire Wire Line
+	6175 5125 6075 5125
+Wire Wire Line
+	6075 5125 6075 5225
+Wire Wire Line
+	6075 5225 6175 5225
+Wire Wire Line
+	6675 4325 6775 4325
+Wire Wire Line
+	6775 4325 6775 4425
+Wire Wire Line
+	6775 4425 6675 4425
+Wire Wire Line
+	6675 5525 6775 5525
+Wire Wire Line
+	6775 5525 6775 5625
+Wire Wire Line
+	6775 5625 6675 5625
+Wire Wire Line
+	6075 5225 6075 5775
+Connection ~ 6075 5225
+Wire Wire Line
+	6425 5775 6775 5775
+Wire Wire Line
+	6775 5775 6775 5625
+Connection ~ 6425 5775
+Connection ~ 6775 5625
+Wire Wire Line
+	6775 5525 6775 4425
+Connection ~ 6775 5525
+Connection ~ 6775 4425
+Wire Wire Line
+	6175 4125 5650 4125
+Wire Wire Line
+	5650 4225 6175 4225
+Wire Wire Line
+	6175 4325 5650 4325
+Wire Wire Line
+	5650 4425 6175 4425
+Wire Wire Line
+	6175 4525 5675 4525
+Wire Wire Line
+	5675 4525 5675 4625
+Wire Wire Line
+	5675 4625 5650 4625
+Wire Wire Line
+	6175 4625 5700 4625
+Wire Wire Line
+	5700 4625 5700 4725
+Wire Wire Line
+	5700 4725 5650 4725
+Wire Wire Line
+	6175 4725 5725 4725
+Wire Wire Line
+	5725 4725 5725 4825
+Wire Wire Line
+	5725 4825 5650 4825
+Wire Wire Line
+	6175 4825 5750 4825
+Wire Wire Line
+	5750 4825 5750 4925
+Wire Wire Line
+	5750 4925 5650 4925
+Wire Wire Line
+	6175 4925 5775 4925
+Wire Wire Line
+	5775 4925 5775 5125
+Wire Wire Line
+	5775 5125 5650 5125
+Wire Wire Line
+	6175 5025 5800 5025
+Wire Wire Line
+	5800 5025 5800 5225
+Wire Wire Line
+	5800 5225 5650 5225
+Wire Wire Line
+	6175 5325 5650 5325
+Wire Wire Line
+	6175 5425 5650 5425
+Wire Wire Line
+	6175 5525 5775 5525
+Wire Wire Line
+	5775 5525 5775 5625
+Wire Wire Line
+	5775 5625 5650 5625
+Wire Wire Line
+	6175 5625 5800 5625
+Wire Wire Line
+	5800 5625 5800 5725
+Wire Wire Line
+	5800 5725 5650 5725
+Wire Wire Line
+	7525 5525 7625 5525
+Wire Wire Line
+	6675 3725 7125 3725
+Wire Wire Line
+	7125 3825 6675 3825
+Wire Wire Line
+	6675 3925 7125 3925
+Wire Wire Line
+	7125 4025 6675 4025
+Wire Wire Line
+	6675 4125 7050 4125
+Wire Wire Line
+	7050 4125 7050 4225
+Wire Wire Line
+	7050 4225 7125 4225
+Wire Wire Line
+	6675 4225 7025 4225
+Wire Wire Line
+	7025 4225 7025 4325
+Wire Wire Line
+	7025 4325 7125 4325
+Wire Wire Line
+	7125 4525 7050 4525
+Wire Wire Line
+	7050 4525 7050 4625
+Wire Wire Line
+	7050 4625 6675 4625
+Wire Wire Line
+	6675 4525 7025 4525
+Wire Wire Line
+	7025 4525 7025 4425
+Wire Wire Line
+	7025 4425 7125 4425
+Wire Wire Line
+	7125 4725 6675 4725
+Wire Wire Line
+	6675 4825 7125 4825
+Wire Wire Line
+	7125 4925 6675 4925
+Wire Wire Line
+	6675 5025 7125 5025
+Wire Wire Line
+	7125 5225 7050 5225
+Wire Wire Line
+	7050 5225 7050 5125
+Wire Wire Line
+	7050 5125 6675 5125
+Wire Wire Line
+	6675 5225 7025 5225
+Wire Wire Line
+	7025 5225 7025 5325
+Wire Wire Line
+	7025 5325 7125 5325
+Wire Wire Line
+	7125 5425 7000 5425
+Wire Wire Line
+	7000 5425 7000 5325
+Wire Wire Line
+	7000 5325 6675 5325
+Wire Wire Line
+	6675 5425 6975 5425
+Wire Wire Line
+	6975 5425 6975 5525
+Wire Wire Line
+	6975 5525 7125 5525
 Wire Bus Line
 	2225 3650 2225 6650
 $EndSCHEMATC
