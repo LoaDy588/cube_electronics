@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 7 10
 Title "Cube Main Board - External I/O"
-Date "2020-09-08"
-Rev "1"
+Date "2020-09-27"
+Rev "1.1"
 Comp "Oldřich Pecák (LoaDy)"
 Comment1 "Licensed under CERN-OHL-P v2"
 Comment2 ""
@@ -80,7 +80,7 @@ L Device:R_Small R15
 U 1 1 5F7222AA
 P 4325 2400
 F 0 "R15" H 4267 2354 50  0000 R CNN
-F 1 "33K" H 4267 2445 50  0000 R CNN
+F 1 "1M" H 4267 2445 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 4325 2400 50  0001 C CNN
 F 3 "~" H 4325 2400 50  0001 C CNN
 	1    4325 2400
@@ -189,11 +189,7 @@ Wire Wire Line
 	7500 4250 7425 4250
 Connection ~ 7500 4100
 Wire Wire Line
-	6350 3450 6350 4100
-Wire Wire Line
 	6100 3450 6350 3450
-Wire Wire Line
-	6250 3550 6250 3900
 Wire Wire Line
 	6100 3550 6250 3550
 Wire Wire Line
@@ -226,14 +222,6 @@ F 3 "~" H 5900 3450 50  0001 C CNN
 	1    5900 3450
 	-1   0    0    -1  
 $EndComp
-Connection ~ 6250 3900
-Connection ~ 6350 4100
-Wire Wire Line
-	6350 4100 5850 4100
-Wire Wire Line
-	6250 3900 6675 3900
-Wire Wire Line
-	6350 4100 6675 4100
 $Comp
 L Device:R_Small R18
 U 1 1 5F74371A
@@ -566,8 +554,6 @@ Wire Wire Line
 	5950 4300 5950 3900
 Connection ~ 5950 3900
 Wire Wire Line
-	5950 3900 6250 3900
-Wire Wire Line
 	6625 4300 6675 4300
 Wire Wire Line
 	6675 4300 6675 4100
@@ -592,4 +578,18 @@ Text Notes 5050 3050 0    50   ~ 0
 I2C with 12V buffer/driver for communication\nwith the interface board.
 Text Notes 4975 5375 0    50   ~ 0
 UART for external communication.
+Wire Wire Line
+	5950 3900 6350 3900
+Wire Wire Line
+	5850 4100 6250 4100
+Wire Wire Line
+	6250 3550 6250 4100
+Connection ~ 6250 4100
+Wire Wire Line
+	6250 4100 6675 4100
+Wire Wire Line
+	6350 3450 6350 3900
+Connection ~ 6350 3900
+Wire Wire Line
+	6350 3900 6675 3900
 $EndSCHEMATC
