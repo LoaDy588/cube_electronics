@@ -1492,10 +1492,6 @@ Text Notes 7825 2725 0    100  ~ 0
 Reset button
 Text Notes 5600 800  0    100  ~ 0
 32.768kHz oscillator and\noptional HSE oscillator for MCU
-Wire Bus Line
-	8125 5225 8125 6200
-Wire Bus Line
-	1625 4300 1625 7300
 Text Notes 9050 825  0    100  ~ 0
 debug/status LEDs
 Text Notes 6775 1575 0    50   ~ 0
@@ -1508,4 +1504,8 @@ Text Notes 825  1775 0    50   ~ 0
 Each VDD/VSS pair gets a 100n capacitor.\nCapacitor should be placed as close as possible to the pins.
 Text Notes 6000 2600 0    100  ~ 0
 Debug header
+Wire Bus Line
+	8125 5225 8125 6200
+Wire Bus Line
+	1625 4300 1625 7300
 $EndSCHEMATC

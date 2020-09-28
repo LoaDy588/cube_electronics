@@ -561,9 +561,9 @@ Connection ~ 6675 4100
 Wire Wire Line
 	6675 4100 6775 4100
 Text HLabel 6925 1700 2    50   Input ~ 0
-USB_DP
+USB_DATA_P
 Text HLabel 6925 2100 2    50   Input ~ 0
-USB_DM
+USB_DATA_N
 Text HLabel 7775 3900 2    50   Input ~ 0
 I2C_SDA
 Text HLabel 7775 4100 2    50   Input ~ 0
