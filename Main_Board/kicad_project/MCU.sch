@@ -5,10 +5,10 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 8 10
 Title "Cube Main Board - MCU & Debug"
-Date "2020-09-23"
-Rev "1"
+Date "2020-10-02"
+Rev "1.1"
 Comp "Oldřich Pecák (LoaDy)"
-Comment1 "Licensed under CERN-OHL-P v2"
+Comment1 "Licensed under CERN-OHL-W v2"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -237,33 +237,31 @@ VDD
 $Comp
 L Device:C_Small C62
 U 1 1 5F509E58
-P 3050 2700
-F 0 "C62" H 3000 2625 50  0000 R CNN
-F 1 "100n" H 3025 2775 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 3050 2700 50  0001 C CNN
-F 3 "~" H 3050 2700 50  0001 C CNN
-	1    3050 2700
+P 2700 2700
+F 0 "C62" H 2650 2625 50  0000 R CNN
+F 1 "100n" H 2675 2775 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2700 2700 50  0001 C CNN
+F 3 "~" H 2700 2700 50  0001 C CNN
+	1    2700 2700
 	1    0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR068
 U 1 1 5F50A4F3
-P 3050 2800
-F 0 "#PWR068" H 3050 2550 50  0001 C CNN
-F 1 "GND" H 3055 2627 50  0000 C CNN
-F 2 "" H 3050 2800 50  0001 C CNN
-F 3 "" H 3050 2800 50  0001 C CNN
-	1    3050 2800
+P 2700 2800
+F 0 "#PWR068" H 2700 2550 50  0001 C CNN
+F 1 "GND" H 2705 2627 50  0000 C CNN
+F 2 "" H 2700 2800 50  0001 C CNN
+F 3 "" H 2700 2800 50  0001 C CNN
+	1    2700 2800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3275 2550 3050 2550
+	2700 2600 2700 2550
+Connection ~ 2700 2550
 Wire Wire Line
-	3050 2600 3050 2550
-Connection ~ 3050 2550
-Wire Wire Line
-	3050 2550 2875 2550
-Text HLabel 2875 2550 0    50   Input ~ 0
+	2700 2550 2525 2550
+Text HLabel 2525 2550 0    50   Input ~ 0
 VDDA
 $Comp
 L power:GND #PWR069
@@ -350,7 +348,6 @@ Text Label 9600 5125 0    50   ~ 0
 NRST
 Text Label 3750 4925 2    50   ~ 0
 EXP_IO9
-NoConn ~ 3275 2750
 $Comp
 L Device:Crystal_GND24_Small Y2
 U 1 1 5F6CA2E3
@@ -1504,6 +1501,36 @@ Text Notes 825  1775 0    50   ~ 0
 Each VDD/VSS pair gets a 100n capacitor.\nCapacitor should be placed as close as possible to the pins.
 Text Notes 6000 2600 0    100  ~ 0
 Debug header
+$Comp
+L Device:Battery_Cell BT1
+U 1 1 5F78FF28
+P 3200 3000
+F 0 "BT1" H 3318 3096 50  0000 L CNN
+F 1 "CR2032" H 3318 3005 50  0000 L CNN
+F 2 "LoaDy:CR2032_SMD" H 3318 2959 50  0001 L CNN
+F 3 "~" V 3200 3060 50  0001 C CNN
+	1    3200 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 2550 3275 2550
+Wire Wire Line
+	3275 2750 3200 2750
+$Comp
+L power:GND #PWR0121
+U 1 1 5F7DE995
+P 3200 3100
+F 0 "#PWR0121" H 3200 2850 50  0001 C CNN
+F 1 "GND" H 3205 2927 50  0000 C CNN
+F 2 "" H 3200 3100 50  0001 C CNN
+F 3 "" H 3200 3100 50  0001 C CNN
+	1    3200 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 2800 3200 2750
+Text Notes 3300 3150 0    50   ~ 0
+Battery backup for RTC
 Wire Bus Line
 	8125 5225 8125 6200
 Wire Bus Line

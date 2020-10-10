@@ -5,10 +5,10 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 10
 Title "Cube Main Board - top level schematic"
-Date "2020-09-23"
+Date "2020-10-02"
 Rev "1"
 Comp "Oldřich Pecák (LoaDy)"
-Comment1 "Licensed under CERN-OHL-P v2"
+Comment1 "Licensed under CERN-OHL-W v2"
 Comment2 ""
 Comment3 ""
 Comment4 ""
