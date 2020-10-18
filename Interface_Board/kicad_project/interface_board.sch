@@ -4,11 +4,11 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title "Cube Interface Board"
-Date ""
-Rev "1"
-Comp ""
-Comment1 "Olřich Pecák"
+Title "Cube Interface Board - Schematic"
+Date "2020-10-18"
+Rev "2"
+Comp "Olřich Pecák (LoaDy)"
+Comment1 "Licensed under CERN-OHL-W v2"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -63,7 +63,7 @@ U 1 1 5F0EA758
 P 2225 5025
 F 0 "J1" H 2143 5342 50  0000 C CNN
 F 1 "INPUT" H 2143 5251 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 2225 5025 50  0001 C CNN
+F 2 "LoaDy:Molex_70543-0003" H 2225 5025 50  0001 C CNN
 F 3 "~" H 2225 5025 50  0001 C CNN
 	1    2225 5025
 	-1   0    0    -1  
