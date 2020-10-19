@@ -838,7 +838,7 @@
   )
 
   (module Symbol:OSHW-Symbol_13.4x12mm_SilkScreen (layer F.Cu) (tedit 0) (tstamp 5F8DE4D7)
-    (at 164.7 86.6)
+    (at 177.4 81.6)
     (descr "Open Source Hardware Symbol")
     (tags "Logo Symbol OSHW")
     (attr virtual)
