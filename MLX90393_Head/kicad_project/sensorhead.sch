@@ -1,30 +1,18 @@
 EESchema Schematic File Version 4
-LIBS:sensorhead-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
-Comp ""
+Title "MLX90393 Sensorhead - schematic"
+Date "2020-10-19"
+Rev "1"
+Comp "Oldrich Pecak (LoaDy)"
 Comment1 ""
 Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L LoaDy:MLX90393 U1
-U 1 1 5F074E4E
-P 5600 3600
-F 0 "U1" H 5550 4165 50  0000 C CNN
-F 1 "MLX90393" H 5550 4074 50  0000 C CNN
-F 2 "Package_DFN_QFN:QFN-16-1EP_3x3mm_P0.5mm_EP1.75x1.75mm" H 5600 3600 50  0001 C CNN
-F 3 "" H 5600 3600 50  0001 C CNN
-	1    5600 3600
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:C_Small C1
 U 1 1 5F0766C9
@@ -236,4 +224,15 @@ Wire Wire Line
 	4450 3125 4500 3125
 Wire Wire Line
 	4500 3125 4500 3175
+$Comp
+L LoaDy:MLX90393 U1
+U 1 1 5F074E4E
+P 5600 3600
+F 0 "U1" H 5550 4165 50  0000 C CNN
+F 1 "MLX90393" H 5550 4074 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-16-1EP_3x3mm_P0.5mm_EP1.75x1.75mm" H 5600 3600 50  0001 C CNN
+F 3 "" H 5600 3600 50  0001 C CNN
+	1    5600 3600
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
