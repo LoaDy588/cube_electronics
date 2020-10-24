@@ -8,14 +8,14 @@ It communicates with the main board via buffered 12V I2C bus.
 
 ## License
 
-Copyright Oldrich Pecak 2020.
+Copyright Oldřich Pecák 2020.
 
-This source describes Open Hardware and is licensed under the CERN-OHL-S v2.
+This source describes Open Hardware and is licensed under the CERN-OHL-W v2.
 
-You may redistribute and modify this source and make products using it under the terms of the CERN-OHL-S v2 (https://ohwr.org/cern_ohl_s_v2.txt).
+You may redistribute and modify this source and make products using it under the terms of the CERN-OHL-W v2 (https://ohwr.org/cern_ohl_w_v2.txt).
 
 This source is distributed WITHOUT ANY EXPRESS OR IMPLIED WARRANTY, INCLUDING OF MERCHANTABILITY, SATISFACTORY QUALITY AND FITNESS FOR A PARTICULAR PURPOSE. Please see the CERN-OHL-W v2 for applicable conditions.
 
 Source location: LICENSE.txt
 
-As per CERN-OHL-S v2 section 4, should You produce hardware based on this source, You must where practicable maintain the Source Location visible on the external case of the Gizmo or other products you make using this source.
+As per CERN-OHL-W v2 section 4, should You produce hardware based on this source, You must where practicable maintain the Source Location visible on the external case of the Gizmo or other products you make using this source.
