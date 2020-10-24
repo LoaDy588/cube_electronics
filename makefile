@@ -6,15 +6,15 @@ PROJ_DIR  = kicad_project
 
 all: $(addsuffix .zip, $(BOARDS))
 
-%.zip: %.kicad_pcb
-	zip -j $(OUTPUT)/$@ $(OUTPUT)/$*/*
+%.zip: %-gerber
+	zip -j $(OUTPUT)/$@ $(OUTPUT)/$</*
 
-%.kicad_pcb: build
-	mkdir $(OUTPUT)/$*
-	kikit export gerber $*/$(PROJ_DIR)/$@ $(OUTPUT)/$*
+%-gerber: build
+	mkdir $(OUTPUT)/$@
+	kikit export gerber $*/$(PROJ_DIR)/$*.kicad_pcb $(OUTPUT)/$@
 
 build:
 	mkdir $(OUTPUT)
 
 clean:
-	rm -rf ./gerber/
+	rm -rf $(OUTPUT)
